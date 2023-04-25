@@ -1,0 +1,389 @@
+@import "variables";
+
+* {
+  &, &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#main {
+  background-image: linear-gradient(228.57deg, $main-gradient-from 11.93%, $main-gradient-from 57.17%, $main-gradient-to 87.46%);
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, Verdana, Helvetica, sans-serif
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "contacts contacts contacts"
+    "logo . menu";
+  grid-template-columns: auto 1fr auto;
+
+  @media (min-width: $breakpoint-sm) {
+    grid-template-areas:
+      "contacts"
+      "logo"
+      "menu";
+    grid-template-columns: unset;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    grid-template-areas:
+    "logo . contacts"
+    "logo . menu";
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .contacts {
+    grid-area: contacts;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba($header-bg, 0.2);
+    padding: 10px 15px;
+
+    @media (min-width: $breakpoint-sm) {
+      padding: 50px 60px 30px;
+      background-color: transparent;
+    }
+
+    @media (min-width: $breakpoint-sm) {
+      justify-content: flex-start;
+    }
+
+    .lang-wrapper_button {
+      display: inline-flex;
+      width: 33px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+      color: $header-lang-button;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      background-color: transparent;
+      border: 0;
+
+      &:hover, &:focus {
+        cursor: pointer;
+      }
+    }
+
+    .lang-wrapper_button-activity {
+      background-color: $header-lang-button-activity;
+      border-radius: 8px;
+    }
+
+    .address {
+      display: none;
+
+      @media (min-width: $breakpoint-sm) {
+        display: inline-flex;
+        align-items: center;
+        color: $header-text-dark;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        color: $header-text-light;
+      }
+    }
+
+    .phone {
+      font-weight: 700;
+      color: $header-lang-button;
+    }
+
+    .social-icons {
+      display: none;
+
+      @media (min-width: $breakpoint-sm) {
+        display: inline-flex;
+
+        align-items: center;
+      }
+    }
+
+  }
+
+  .logo-container {
+    grid-area: logo;
+    padding-left: 15px;
+
+    @media (min-width: $breakpoint-sm) {
+      padding-left: 60px;
+    }
+
+    @media (min-width: $breakpoint-md) {
+      padding-top: 50px;
+    }
+  }
+
+  .logo {
+    display: inline-block;
+
+    .logo__image {
+      width: 169px;
+      height: 57px;
+
+      @media (min-width: $breakpoint-sm) {
+        width: 302px;
+        height: 60px;
+      }
+    }
+  }
+
+  .menu {
+    grid-area: menu;
+    display: inline-flex;
+    padding-right: 15px;
+
+    .menu__icon {
+      display: inline-flex;
+      align-self: center;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+
+      @media (min-width: $breakpoint-sm) {
+        display: none;
+      }
+    }
+
+    .menu__items {
+      display: none;
+      margin-left: 81px;
+      @media (min-width: $breakpoint-sm) {
+        display: flex;
+        list-style: none;
+        margin-left: 0;
+      }
+      @media (min-width: $breakpoint-md) {
+        margin-left: 81px;
+      }
+    }
+
+    .menu__item {
+      padding-left: 15px;
+      color: $menu-link-light;
+      font-weight: 700;
+    }
+
+    .menu__item-activity {
+      color: $menu-link-activity;
+    }
+  }
+
+
+  .divider {
+    margin: 0 6px;
+  }
+}
+
+.divider {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+
+  &.divider_light {
+    background-color: $divider-light;
+  }
+}
+
+.main-tittle-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 138px;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: 260px;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: 250px;
+  }
+}
+
+.main__tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: #FFFFFF;
+  width: 300px;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 100%;
+  }
+}
+
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid $scroll-btn-border;
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 40px;
+  margin: 159px auto 0;
+  @media (min-width: $breakpoint-sm) {
+    margin: 417px auto 0;
+  }
+
+  .scroll-button_hover {
+    display: none;
+  }
+
+  &:hover {
+    border-color: $scroll-btn-border-hover;
+
+    .scroll-button_default {
+      display: none;
+    }
+
+    .scroll-button_hover {
+      display: inline-flex;
+    }
+  }
+}
+
+.main-information-block {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    margin: 90px auto 0;
+
+  }
+}
+
+.main-information-left-items {
+  white-space: nowrap;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  color: $main-information-block__items-color;
+  border-bottom: 4px solid $main-information-border-color;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 90px;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 55px;
+    padding-right: 60px;
+    margin-left: 60px;
+    overflow-x: visible;
+    white-space: normal;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    border-bottom: none;
+    align-items: end;
+  }
+
+}
+
+
+//доделать ширину левым блокам, и разместить их нормально
+// разберись как тебе верстать под HD экраны, так как у тебя он меньше чем надо
+
+.consistent {
+  margin-left: 30px;
+  @media (min-width: $breakpoint-sm) {
+    margin-left: 60px;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-left: 0;
+  }
+}
+
+.consistent_gradient {
+  background: linear-gradient(90.13deg, $main-information_gradient-from 0.84%, $main-information_gradient-to 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-information-right-items {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  @media (min-width: $breakpoint-sm) {
+    width: 100%;
+    display: flex;
+    padding-left: 60px;
+    padding-bottom: 65px;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: 0;
+    margin-top: 95px;
+  }
+}
+
+.main-information-items__tittle {
+  width: auto;
+  color: $main__tittle;
+  @media (min-width: $breakpoint-md) {
+    width: 405px;
+    margin: 0;
+  }
+
+}
+
+
+.main-information-items__sub-tittle {
+  width: 315px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #FFFFFF;
+  @media (min-width: $breakpoint-sm) {
+    width: 648px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 405px;
+    margin-top: 30px;
+  }
+  @media (min-width: $breakpoint-bg) {
+  color: red;
+  }
+}
+
+.customer-oriented {
+  @media (min-width: $breakpoint-md) {
+    width: 375px;
+  }
+}
+
+.line {
+  width: 4px;
+  height: 303px;
+  border: 4px solid $main-information-border-color;
+  display: none;
+  @media (min-width: $breakpoint-md) {
+    display: inline;
+    margin-top: 90px;
+  }
+}
+
+
+
