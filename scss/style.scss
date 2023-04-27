@@ -18,11 +18,14 @@ a {
 #main {
   background-image: linear-gradient(228.57deg, $main-gradient-from 11.93%, $main-gradient-from 57.17%, $main-gradient-to 87.46%);
   min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
   margin: 0;
-  font-family: Montserrat, Verdana, Helvetica, sans-serif
+  font-family: Montserrat, Verdana, Helvetica, sans-serif;
+
 }
 
 header {
@@ -31,6 +34,8 @@ header {
     "contacts contacts contacts"
     "logo . menu";
   grid-template-columns: auto 1fr auto;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: $breakpoint-sm) {
     grid-template-areas:
@@ -193,6 +198,39 @@ header {
   }
 }
 
+.logo-bg {
+  z-index: -0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 600px;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .logo-bg {
+    height: 1024px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .logo-bg {
+    height: 768px;
+  }
+}
+
+@media (min-width: $breakpoint-bg) {
+  .logo-bg {
+    height: 985px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .logo-bg {
+    height: 1000px;
+  }
+}
+
 .divider {
   display: inline-block;
   width: 6px;
@@ -224,7 +262,8 @@ header {
   font-size: 38px;
   color: #FFFFFF;
   width: 300px;
-
+  position: absolute;
+  z-index: 1;
   @media (min-width: $breakpoint-sm) {
     width: 100%;
   }
@@ -268,11 +307,20 @@ header {
   @media (min-width: $breakpoint-md) {
     flex-direction: row;
     margin: 90px auto 0;
+  }
+  @media (min-width: $breakpoint-bg) {
+    margin-left: 125px;
+  }
+}
 
+@media (min-width: $breakpoint-xl) {
+  .main-information-block {
+    margin-left: 264px;
   }
 }
 
 .main-information-left-items {
+  cursor: pointer;
   white-space: nowrap;
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -298,12 +346,14 @@ header {
     border-bottom: none;
     align-items: end;
   }
-
 }
 
+@media (min-width: $breakpoint-xl) {
+  .main-information-left-items > span:hover {
+    color: $main-information-left-items_hover-color;
+  }
+}
 
-//доделать ширину левым блокам, и разместить их нормально
-// разберись как тебе верстать под HD экраны, так как у тебя он меньше чем надо
 
 .consistent {
   margin-left: 30px;
@@ -349,6 +399,7 @@ header {
 
 
 .main-information-items__sub-tittle {
+  margin-bottom: 30px;
   width: 315px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -358,13 +409,23 @@ header {
   color: #FFFFFF;
   @media (min-width: $breakpoint-sm) {
     width: 648px;
+    margin-bottom: 0;
   }
   @media (min-width: $breakpoint-md) {
     width: 405px;
     margin-top: 30px;
   }
-  @media (min-width: $breakpoint-bg) {
-  color: red;
+}
+
+@media (min-width: $breakpoint-bg) {
+  .main-information-items__sub-tittle {
+    width: 581px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .main-information-items__sub-tittle {
+    width: 861px;
   }
 }
 
@@ -379,11 +440,77 @@ header {
   height: 303px;
   border: 4px solid $main-information-border-color;
   display: none;
+
   @media (min-width: $breakpoint-md) {
     display: inline;
     margin-top: 90px;
   }
 }
+
+.services {
+
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $services-color;
+  display: inline;
+  letter-spacing: 1px;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .services {
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .services {
+    margin-top: 60px;
+    margin-left: 160px;
+
+    &:hover {
+      color: $main-information-left-items_hover-color;
+    }
+  }
+}
+
+.bird_hover {
+  display: none;
+}
+
+//спросить за птичку
+.main-promo-tittle {
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 315px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, $main-information_gradient-from 0.84%, $main-information_gradient-to 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  @media (min-width: $breakpoint-sm) {
+    margin-left: 60px;
+    width: 365px;
+
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin-left: 160px;
+    width: 1600px;
+  }
+}
+
+
+
 
 
 
