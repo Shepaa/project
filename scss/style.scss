@@ -171,6 +171,11 @@ header {
     .menu__items {
       display: none;
       margin-left: 81px;
+
+      a {
+        text-decoration: none;
+      }
+
       @media (min-width: $breakpoint-sm) {
         display: flex;
         list-style: none;
@@ -204,7 +209,7 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 600px;
+  height: 485px;
 }
 
 @media (min-width: $breakpoint-sm) {
@@ -497,7 +502,7 @@ header {
 
   @media (min-width: $breakpoint-sm) {
     margin-left: 60px;
-    width: 365px;
+    width: 445px;
 
   }
   @media (min-width: $breakpoint-md) {
@@ -509,8 +514,49 @@ header {
   }
 }
 
+#bird-svg {
+  fill: #24A3FF;
+  @media (min-width: $breakpoint-xl) {
+    .services:hover & {
+      fill: #F0145A;
+    }
+  }
+}
 
+.promo-container {
+  margin-top: 30px;
+  margin-left: 30px;
 
+  img {
+    width: 92px;
+    height: 92px;
+
+  }
+}
+
+.it-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.it-block__tittle {
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #24A3FF;
+}
+.it-block__sub-tittle{
+  width: 315px;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  //медиа запросами тут менять размер текста этого
+}
 
 
 

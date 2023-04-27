@@ -1,22 +1,29 @@
+$white: #FFFFFF;
+$active-color: #F0145A;
+$dark: #B3B3BA;
+
+
+
+
 $main-gradient-from: #323264;
 $main-gradient-to: #643E72;
-$main__tittle: #FFFFFF;
+$main__tittle: $white;
 $header-bg: #f5f5fa;
-$header-lang-button: #FFFFFF;
-$header-lang-button-activity: #F0145A;
-$header-text-light: #FFFFFF;
+$header-lang-button: $white;
+$header-lang-button-activity: $active-color;
+$header-text-light: $white;
 $header-text-dark: #B3B3BA;
-$menu-link-light: #FFFFFF;
-$menu-link-activity: #F0145A;
-$scroll-btn-border: #B3B3BA;
-$divider-light: #FFFFFF;
-$divider-dark: #B3B3BA;
-$scroll-btn-border-hover: #F0145A;
-$main-information-block__items-color: #B3B3BA;
+$menu-link-light: $white;
+$menu-link-activity: $active-color;
+$scroll-btn-border: $dark;
+$divider-light: $white;
+$divider-dark: $dark;
+$scroll-btn-border-hover: $active-color;
+$main-information-block__items-color: $dark;
 $main-information_gradient-from: #EF8080;
-$main-information_gradient-to: #F0145A;
+$main-information_gradient-to: $active-color;
 $main-information-border-color: rgba(255, 255, 255, 0.3);
-$main-information-left-items_hover-color: #F0145A;
+$main-information-left-items_hover-color: $active-color;
 $services-color: #24A3FF;
 
 $breakpoint-sm: 767px;
