@@ -241,7 +241,7 @@ header .divider {
 }
 
 .main__tittle {
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -399,7 +399,7 @@ header .divider {
 .main-information-items__sub-tittle {
   margin-bottom: 30px;
   width: 315px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -450,7 +450,7 @@ header .divider {
 
 .services {
   margin-left: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -482,7 +482,7 @@ header .divider {
   margin-top: 10px;
   margin-left: 30px;
   width: 315px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -517,11 +517,11 @@ header .divider {
   }
 }
 
-.promo-container {
+.service-container {
   margin-top: 30px;
   margin-left: 30px;
 }
-.promo-container img {
+.service-container img {
   width: 92px;
   height: 92px;
 }
@@ -533,7 +533,7 @@ header .divider {
 
 .it-block__tittle {
   margin-top: 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -543,11 +543,32 @@ header .divider {
 .it-block__sub-tittle {
   width: 315px;
   margin-top: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
+}
+@media (min-width: 767px) {
+  .it-block__sub-tittle {
+    width: 291px;
+  }
+}
+
+.support-block {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.support-block__tittle {
+  margin-top: 30px;
+  width: 300px;
+  color: #24A3FF;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
 }
 
 /*# sourceMappingURL=style.css.map */

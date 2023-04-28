@@ -261,7 +261,7 @@ header {
 }
 
 .main__tittle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -406,7 +406,7 @@ header {
 .main-information-items__sub-tittle {
   margin-bottom: 30px;
   width: 315px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -455,11 +455,11 @@ header {
 .services {
 
   margin-left: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  color: $services-color;
+  color: $services-color__tittle;
   display: inline;
   letter-spacing: 1px;
 }
@@ -491,7 +491,7 @@ header {
   margin-top: 10px;
   margin-left: 30px;
   width: 315px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -523,7 +523,7 @@ header {
   }
 }
 
-.promo-container {
+.service-container {
   margin-top: 30px;
   margin-left: 30px;
 
@@ -541,22 +541,38 @@ header {
 
 .it-block__tittle {
   margin-top: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: #24A3FF;
+  color: $services-color__tittle;
 }
-.it-block__sub-tittle{
+
+.it-block__sub-tittle {
   width: 315px;
   margin-top: 15px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #FFFFFF;
-  //медиа запросами тут менять размер текста этого
+  @media (min-width: $breakpoint-sm) {
+    width: 291px;
+  }
 }
-
+.support-block{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.support-block__tittle {
+  margin-top: 30px;
+  width: 300px;
+  color: $services-color__tittle;
+  font-family: $montserrat_fonts, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
 
 
