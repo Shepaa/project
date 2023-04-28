@@ -20,6 +20,7 @@ a {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
+  border-radius: 0 0 12px 12px;
 }
 
 body {
@@ -204,7 +205,7 @@ header {
 }
 
 .logo-bg {
-  z-index: -0;
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 50%;
@@ -411,7 +412,7 @@ header {
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: $main-information-items__sub-tittle;
   @media (min-width: $breakpoint-sm) {
     width: 648px;
     margin-bottom: 0;
@@ -518,61 +519,149 @@ header {
   fill: #24A3FF;
   @media (min-width: $breakpoint-xl) {
     .services:hover & {
-      fill: #F0145A;
+      fill: $bird_hover;
     }
   }
 }
 
 .service-container {
-  margin-top: 30px;
   margin-left: 30px;
+  margin-bottom: 60px;
+  @media (min-width: $breakpoint-sm) {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin-left: 160px;
+  }
 
   img {
     width: 92px;
     height: 92px;
-
   }
 }
 
-.it-block {
+.service__block {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+  @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+  }
 }
 
-.it-block__tittle {
+.service__tittle {
+  width: 315px;
   margin-top: 30px;
   font-family: $montserrat_fonts, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: $services-color__tittle;
+  @media (min-width: $breakpoint-sm) {
+    width: 294px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 261.33px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 400px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 493.33px;
+  }
 }
 
-.it-block__sub-tittle {
-  width: 315px;
+.service__sub-tittle {
   margin-top: 15px;
+  width: 315px;
   font-family: $montserrat_fonts, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: $services-color__sub-tittle;
   @media (min-width: $breakpoint-sm) {
-    width: 291px;
+    width: 294px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 261.33px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 400px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 493.33px;
   }
 }
-.support-block{
-  margin-top: 30px;
+
+.protection-of-business-block {
   display: flex;
   flex-direction: column;
-}
-.support-block__tittle {
   margin-top: 30px;
-  width: 300px;
-  color: $services-color__tittle;
-  font-family: $montserrat_fonts, sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
 }
 
+.it-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+  }
+}
 
+.support-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-left: 60px;
+  }
+}
+
+.relationships-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+    margin-top: 113px;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+}
+
+.building-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+  }
+}
+
+.protection-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+    margin-top: 120px;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+}
+
+.judicial-block_position {
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-left: 60px;
+  }
+}
+.shadow-line_dark{
+  margin: 0 auto;
+  width: 83vw;
+  height: 10px;
+  background: #CACADB;
+  border-radius: 0 0 12px 12px;
+}
+.shadow-line_white{
+  width: 73vw;
+  height: 10px;
+  margin: 0 auto;
+  background: #E7E7F2;
+  border-radius: 0 0 12px 12px;
+}

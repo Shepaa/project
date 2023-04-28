@@ -3,8 +3,6 @@ $active-color: #F0145A;
 $dark: #B3B3BA;
 
 
-
-
 $main-gradient-from: #323264;
 $main-gradient-to: #643E72;
 $main__tittle: $white;
@@ -26,10 +24,9 @@ $main-information-border-color: rgba(255, 255, 255, 0.3);
 $main-information-left-items_hover-color: $active-color;
 $services-color__tittle: #24A3FF;
 $montserrat_fonts: Montserrat;
-
-
-
-
+$services-color__sub-tittle: $white;
+$bird_hover: $active-color;
+$main-information-items__sub-tittle: $white;
 
 $breakpoint-sm: 767px;
 $breakpoint-md: 1023px;
