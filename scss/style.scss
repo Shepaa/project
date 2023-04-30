@@ -526,7 +526,6 @@ header {
 
 .service-container {
   margin-left: 30px;
-  margin-bottom: 60px;
   @media (min-width: $breakpoint-sm) {
     margin-left: 60px;
     margin-top: 60px;
@@ -654,65 +653,110 @@ header {
 
 .shadow-line_dark {
   margin: 0 auto;
-  width: 83vw;
+  width: 335px;
   height: 10px;
   background: #CACADB;
   border-radius: 0 0 12px 12px;
+  @media (min-width: $breakpoint-sm) {
+    width: 728px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 984px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 1400px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1880px;
+  }
 }
 
 .shadow-line_white {
-  width: 73vw;
+  width: 295px;
   height: 10px;
   margin: 0 auto;
   background: #E7E7F2;
   border-radius: 0 0 12px 12px;
+  @media (min-width: $breakpoint-sm) {
+    width: 688px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 944px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 1360px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1840px;
+  }
 }
 
 .team-container {
+  //background-color: $team-container-info-block_bg;
+  background-color: yellow;
   display: flex;
   flex-direction: column;
-}
-
-.responsive-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  margin-top: 30px;
+  border-radius: 12px;
+  width: 315px;
+  margin-left: 30px;
+  @media (min-width: $breakpoint-sm) {
+    width: 648px;
+    margin-left: 60px;
+  }
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    width: 904px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    margin-left: 60px;
+    width: 1320px;
+    margin-top: 60px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1600px;
+    margin-left: 160px;
+  }
 }
 
 
 .team-container-info-block {
-  display: flex;
-  flex-direction: column;
-  width: 315px;
-  background-color: yellow;
   margin: 0 auto;
-  border-radius: 12px;
+
   a {
     text-decoration: none;
   }
 
+  img {
+    height: 500px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    margin-left: 30px;
+  }
 }
 
 .team {
   margin-left: 30px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat_fonts, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $team-color;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: 30px;
+  }
 }
 
-.team-container_photo {
-  margin-bottom: 30px;
-}
 
 .team-container__sub-tittle {
   margin-top: 5px;
   width: 255px;
-  margin-left: 30px ;
-  font-family: 'Montserrat', sans-serif;
+  margin-left: 30px;
+  font-family: $montserrat_fonts, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -720,5 +764,94 @@ header {
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (min-width: $breakpoint-sm) {
+    width: 588px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 359px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 860px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1140px;
+  }
+}
 
+.team-container-contact-block {
+  width: 255px;
+  color: $contact_color;
+  margin-left: 30px;
+  font-family: $montserrat_fonts, sans-serif;
+  font-style: normal;
+  margin-top: 30px;
+  @media (min-width: $breakpoint-sm) {
+    width: 548px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 424px;
+  }
+  @media (min-width: $breakpoint-bg) {
+    width: 820px;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1100px;
+  }
+}
+
+.contact-block__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contact-block__sub-name {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+.team-container-info__photo_phone {
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.man-sm {
+  display: none;
+  @media (min-width: $breakpoint-sm) {
+    display: inline;
+  }
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.man-md {
+  display: none;
+  @media (min-width: $breakpoint-md) {
+    display: inline;
+  }
+  @media (min-width: $breakpoint-bg) {
+    display: none;
+  }
+}
+
+.man-bg {
+  display: none;
+  @media (min-width: $breakpoint-bg) {
+    display: inline;
+  }
+  @media (min-width: $breakpoint-xl) {
+    display: none;
+  }
+}
+
+.man-xl {
+  display: none;
+  @media (min-width: $breakpoint-xl) {
+    display: inline;
+  }
 }
