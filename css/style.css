@@ -731,7 +731,7 @@ header .divider {
 }
 
 .team-container {
-  background-color: yellow;
+  background-color: #F5F5FA;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -929,6 +929,28 @@ header .divider {
   .man-xl {
     display: inline;
   }
+}
+
+.slider-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.slider_active {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #24A3FF;
+}
+
+.slider {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background: #24A3FF;
+  opacity: 0.2;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
