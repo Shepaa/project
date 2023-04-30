@@ -942,6 +942,7 @@ header .divider {
   height: 16px;
   border-radius: 16px;
   background: #24A3FF;
+  cursor: pointer;
 }
 
 .slider {
@@ -951,6 +952,21 @@ header .divider {
   background: #24A3FF;
   opacity: 0.2;
   margin-left: 15px;
+  cursor: pointer;
+}
+
+.trust-block {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
 }
 
 /*# sourceMappingURL=style.css.map */

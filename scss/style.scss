@@ -854,22 +854,40 @@ header {
     display: inline;
   }
 }
-.slider-block{
+
+.slider-block {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
+
 .slider_active {
   width: 16px;
   height: 16px;
   border-radius: 16px;
   background: $slider_active;
+  cursor: pointer;
 }
-.slider{
+
+.slider {
   width: 16px;
   height: 16px;
   border-radius: 16px;
-  background: $slider_active ;
+  background: $slider_active;
   opacity: 0.2;
   margin-left: 15px;
+  cursor: pointer;
+}
+.trust-block{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  font-family: $montserrat_fonts, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: $trust-color;
 }
