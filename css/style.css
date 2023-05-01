@@ -520,11 +520,12 @@ header .divider {
 
 .service-container {
   margin-left: 30px;
+  padding-bottom: 60px;
 }
 @media (min-width: 767px) {
   .service-container {
-    margin-left: 60px;
     margin-top: 60px;
+    margin-left: 0;
   }
 }
 @media (min-width: 1920px) {
@@ -535,6 +536,11 @@ header .divider {
 .service-container img {
   width: 92px;
   height: 92px;
+}
+@media (min-width: 767px) {
+  .service-container img {
+    margin-left: 60px;
+  }
 }
 
 .service__block {
@@ -560,6 +566,7 @@ header .divider {
 @media (min-width: 767px) {
   .service__tittle {
     width: 294px;
+    margin-left: 60px;
   }
 }
 @media (min-width: 1023px) {
@@ -590,6 +597,7 @@ header .divider {
 @media (min-width: 767px) {
   .service__sub-tittle {
     width: 294px;
+    margin-left: 60px;
   }
 }
 @media (min-width: 1023px) {
@@ -649,6 +657,11 @@ header .divider {
     display: inline-flex;
   }
 }
+@media (min-width: 1023px) {
+  .building-block_position {
+    margin-left: 26px;
+  }
+}
 
 @media (min-width: 767px) {
   .protection-block_position {
@@ -675,69 +688,28 @@ header .divider {
 }
 
 .shadow-line_dark {
-  margin: 0 auto;
-  width: 335px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 10px;
   background: #CACADB;
   border-radius: 0 0 12px 12px;
 }
-@media (min-width: 767px) {
-  .shadow-line_dark {
-    width: 728px;
-  }
-}
-@media (min-width: 1023px) {
-  .shadow-line_dark {
-    width: 984px;
-  }
-}
-@media (min-width: 1440px) {
-  .shadow-line_dark {
-    width: 1400px;
-  }
-}
-@media (min-width: 1920px) {
-  .shadow-line_dark {
-    width: 1880px;
-  }
-}
 
 .shadow-line_white {
-  width: 295px;
+  margin-right: 40px;
+  margin-left: 40px;
   height: 10px;
-  margin: 0 auto;
   background: #E7E7F2;
   border-radius: 0 0 12px 12px;
-}
-@media (min-width: 767px) {
-  .shadow-line_white {
-    width: 688px;
-  }
-}
-@media (min-width: 1023px) {
-  .shadow-line_white {
-    width: 944px;
-  }
-}
-@media (min-width: 1440px) {
-  .shadow-line_white {
-    width: 1360px;
-  }
-}
-@media (min-width: 1920px) {
-  .shadow-line_white {
-    width: 1840px;
-  }
 }
 
 .team-container {
   background-color: #F5F5FA;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   border-radius: 12px;
   width: 315px;
-  margin-left: 30px;
+  margin: 30px auto;
 }
 @media (min-width: 767px) {
   .team-container {
@@ -790,11 +762,7 @@ header .divider {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24A3FF;
-}
-@media (min-width: 767px) {
-  .team {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 .team-container__sub-tittle {

@@ -526,10 +526,12 @@ header {
 
 .service-container {
   margin-left: 30px;
+  padding-bottom: 60px;
   @media (min-width: $breakpoint-sm) {
-    margin-left: 60px;
     margin-top: 60px;
+    margin-left: 0;
   }
+
   @media (min-width: $breakpoint-xl) {
     margin-left: 160px;
   }
@@ -537,6 +539,9 @@ header {
   img {
     width: 92px;
     height: 92px;
+    @media (min-width: $breakpoint-sm) {
+      margin-left: 60px;
+    }
   }
 }
 
@@ -559,6 +564,7 @@ header {
   color: $services-color__tittle;
   @media (min-width: $breakpoint-sm) {
     width: 294px;
+    margin-left: 60px;
   }
   @media (min-width: $breakpoint-md) {
     width: 261.33px;
@@ -581,6 +587,7 @@ header {
   color: $services-color__sub-tittle;
   @media (min-width: $breakpoint-sm) {
     width: 294px;
+    margin-left: 60px;
   }
   @media (min-width: $breakpoint-md) {
     width: 261.33px;
@@ -629,6 +636,9 @@ header {
   @media (min-width: $breakpoint-sm) {
     display: inline-flex;
   }
+  @media (min-width: $breakpoint-md) {
+    margin-left: 26px;
+  }
 }
 
 .protection-block_position {
@@ -652,53 +662,28 @@ header {
 }
 
 .shadow-line_dark {
-  margin: 0 auto;
-  width: 335px;
+  margin-right: 20px;
+  margin-left: 20px;
   height: 10px;
   background: #CACADB;
   border-radius: 0 0 12px 12px;
-  @media (min-width: $breakpoint-sm) {
-    width: 728px;
-  }
-  @media (min-width: $breakpoint-md) {
-    width: 984px;
-  }
-  @media (min-width: $breakpoint-bg) {
-    width: 1400px;
-  }
-  @media (min-width: $breakpoint-xl) {
-    width: 1880px;
-  }
 }
 
 .shadow-line_white {
-  width: 295px;
+  margin-right: 40px;
+  margin-left: 40px;
   height: 10px;
-  margin: 0 auto;
   background: #E7E7F2;
   border-radius: 0 0 12px 12px;
-  @media (min-width: $breakpoint-sm) {
-    width: 688px;
-  }
-  @media (min-width: $breakpoint-md) {
-    width: 944px;
-  }
-  @media (min-width: $breakpoint-bg) {
-    width: 1360px;
-  }
-  @media (min-width: $breakpoint-xl) {
-    width: 1840px;
-  }
 }
 
 .team-container {
   background-color: $team-container-info-block_bg;
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   border-radius: 12px;
   width: 315px;
-  margin-left: 30px;
+  margin: 30px auto;
   @media (min-width: $breakpoint-sm) {
     width: 648px;
     margin-left: 60px;
@@ -745,9 +730,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: $team-color;
-  @media (min-width: $breakpoint-sm) {
-    margin-top: 30px;
-  }
+  margin-top: 30px;
 }
 
 
@@ -878,7 +861,8 @@ header {
   margin-left: 15px;
   cursor: pointer;
 }
-.trust-block{
+
+.trust-block {
   margin-top: 60px;
   display: flex;
   justify-content: center;
