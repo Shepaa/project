@@ -1,7 +1,7 @@
 $white: #FFFFFF;
 $active-color: #F0145A;
 $dark: #B3B3BA;
-$blue: #24A3FF;
+$promo-color: #24A3FF;
 $gradient: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
 
 $main-gradient-from: #323264;
@@ -23,17 +23,18 @@ $main-information_gradient-from: #EF8080;
 $main-information_gradient-to: $active-color;
 $main-information-border-color: rgba(255, 255, 255, 0.3);
 $main-information-left-items_hover-color: $active-color;
-$services-color__tittle: $blue;
+$services-color__tittle: $promo-color;
 $montserrat_fonts: Montserrat;
 $services-color__sub-tittle: $white;
 $bird_hover: $active-color;
 $main-information-items__sub-tittle: $white;
-$team-color: $blue;
+$team-color: $promo-color;
 $team-container-info-block_bg: #F5F5FA;
 $contact_color: $dark;
-$slider_active: $blue;
+$slider_active: $promo-color;
 $trust-color: #323264;
-
+$footer-bg: #F5F5FA;
+$publications-color: $promo-color;
 
 $breakpoint-sm: 767px;
 $breakpoint-md: 1023px;
