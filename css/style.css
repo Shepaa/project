@@ -1041,7 +1041,7 @@ header .divider {
 }
 
 footer {
-  background-color: red;
+  background-color: #F5F5FA;
   padding-left: 30px;
 }
 
@@ -1058,12 +1058,81 @@ footer {
 }
 
 .footer__title {
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 5px;
   width: 315px;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+@media (min-width: 767px) {
+  .footer__title {
+    font-size: 38px;
+    line-height: 46px;
+    width: 525px;
+  }
+}
+
+.footer-block {
+  margin-right: 30px;
+  background-color: red;
+}
+
+.footer-block__photo-bg {
+  background-image: url("../img/equity.png");
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer-block__title {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.footer-block__data {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin-left: 30px;
+}
+
+.footer-block__line {
+  height: 4px;
+  background: #E6E6F0;
+  margin: 15px 30px 30px;
+}
+
+.footer-block__sub-title {
+  margin-left: 30px;
+  width: 255px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

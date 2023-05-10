@@ -262,7 +262,7 @@ header {
 }
 
 .main__tittle {
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -408,7 +408,7 @@ header {
   margin-bottom: 30px;
 
   width: 315px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -457,7 +457,7 @@ header {
 .services {
 
   margin-left: 30px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -493,7 +493,7 @@ header {
   margin-top: 10px;
   margin-left: 30px;
   width: 315px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 37px;
@@ -561,7 +561,7 @@ header {
 .service__tittle {
   width: 315px;
   margin-top: 30px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -584,7 +584,7 @@ header {
 .service__sub-tittle {
   margin-top: 15px;
   width: 315px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -712,7 +712,7 @@ header {
 }
 
 .team {
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -731,7 +731,7 @@ header {
   margin-top: 5px;
   margin-left: 30px;
   width: 255px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -764,7 +764,7 @@ header {
   width: 255px;
   color: $contact_color;
   margin-left: 30px;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   margin-top: 30px;
   @media (min-width: $breakpoint-sm) {
@@ -825,7 +825,7 @@ header {
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -997,14 +997,14 @@ header {
 }
 
 footer {
-  background-color: red;
+  background-color: $footer-bg;
   padding-left: 30px;
 }
 
 .footer__publications {
   padding-top: 30px;
   color: $promo-color;
-  font-family: $montserrat_fonts, sans-serif;
+  font-family: $montserrat_font, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1012,12 +1012,75 @@ footer {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.footer__title{
+
+.footer__title {
+  cursor: pointer;
+  font-family: $montserrat_font, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  margin-top: 5px;
   width: 315px;
   background: $gradient;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  @media (min-width: $breakpoint-sm) {
+    font-size: 38px;
+    line-height: 46px;
+    width: 525px;
+  }
+}
 
+.footer-block {
+  margin-right: 30px;
+  background-color: red;
+}
+
+.footer-block__photo-bg {
+  background-image: url("../img/equity.png");
+  height: 200px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+}
+.footer-block__title{
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: $montserrat_font, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+.footer-block__data{
+  font-family: $montserrat_font, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin-left: 30px;
+}
+.footer-block__line{
+  height: 4px;
+  background: $footer-line;
+  margin: 15px 30px 30px;
+}
+.footer-block__sub-title{
+  margin-left: 30px;
+  width: 255px;
+  font-family: $montserrat_font, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $footer__sub-title;
 }
