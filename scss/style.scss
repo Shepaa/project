@@ -1034,13 +1034,44 @@ footer {
   }
 }
 
-.footer-block {
+.footer-block_equity {
+  display: flex;
+  flex-direction: column;
   margin-right: 30px;
-  background-color: red;
+  background-color: $footer-block-bg;
+  margin-top: 30px;
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+    margin-left: 30px;
+  }
 }
 
-.footer-block__photo-bg {
+.footer-block_GDPR {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  background-color: $footer-block-bg;
+  margin-top: 30px;
+  @media (min-width: $breakpoint-sm) {
+    display: inline-flex;
+    margin-right: 60px;
+  }
+}
+
+.footer-block_millennial{
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-block-bg;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+
+
+.Equity{
   background-image: url("../img/equity.png");
+}
+.footer-block__photo-bg {
   height: 200px;
   width: 100%;
   background-position: center;
@@ -1048,6 +1079,7 @@ footer {
   border-radius: 8px 8px 0 0;
 }
 .footer-block__title{
+  width: 255px;
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -1056,7 +1088,7 @@ footer {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #24A3FF;
+  color: $footer-block__title;
 }
 .footer-block__data{
   font-family: $montserrat_font, sans-serif;
@@ -1066,7 +1098,7 @@ footer {
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #B3B3BA;
+  color: $footer-data;
   margin-left: 30px;
 }
 .footer-block__line{
@@ -1083,4 +1115,11 @@ footer {
   font-size: 14px;
   line-height: 22px;
   color: $footer__sub-title;
+  padding-bottom: 30px;
+  }
+.GDPR{
+  background-image: url("../img/GDPR.png");
+}
+.millennial{
+  background-image: url("../img/millennial.png");
 }
